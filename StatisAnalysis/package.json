@@ -1,0 +1,25 @@
+{
+  "scripts": {
+    "build": "babel src --extensions .js,.ts,.tsx --out-dir dist",
+    "lint": "eslint --ignore-path .gitignore --ext .js,.ts,.tsx .",
+    "prettier": "prettier --ignore-path .gitignore \"**/*.+(js|json|ts|tsx)\"",
+    "format": "yarn prettier --write",
+    "check-type": "tsc",
+    "check-format": "yarn prettier --list-different",
+    "validate": "yarn check-type && yarn check-format && yarn lint && yarn build"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.0",
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
+    "@babel/preset-typescript": "^7.8.3",
+    "@typescript-eslint/eslint-plugin": "^2.19.0",
+    "@typescript-eslint/parser": "^2.19.0",
+    "eslint": "^6.6.0",
+    "eslint-config-prettier": "^6.10.0"
+  },
+  "dependencies": {
+    "prettier": "^1.19.1",
+    "typescript": "^3.7.5"
+  }
+}
