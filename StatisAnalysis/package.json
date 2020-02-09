@@ -6,7 +6,7 @@
     "format": "yarn prettier --write",
     "check-type": "tsc",
     "check-format": "yarn prettier --list-different",
-    "validate": "yarn check-type && yarn check-format && yarn lint && yarn build"
+    "validate": "npm-run-all --parallel check-type check-format lint build"
   },
   "devDependencies": {
     "@babel/cli": "^7.7.0",
@@ -18,7 +18,8 @@
     "eslint": "^6.6.0",
     "eslint-config-prettier": "^6.10.0",
     "husky": "^4.2.1",
-    "lint-staged": "^10.0.7"
+    "lint-staged": "^10.0.7",
+    "npm-run-all": "^4.1.5"
   },
   "dependencies": {
     "prettier": "^1.19.1",
