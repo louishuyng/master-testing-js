@@ -1,5 +1,6 @@
 import {getFormattedValue} from '../utils'
 
 test('formats the value', () => {
-  expect(getFormattedValue('1234.0')).toBe('1,234.0')
+  expect(getFormattedValue('123.0')).toMatchSnapshot()
+  expect(getFormattedValue('123.0')).toMatchInlineSnapshot(`"123.0"`)
 })
