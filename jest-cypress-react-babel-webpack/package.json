@@ -34,6 +34,7 @@
     "file-loader": "^1.1.11",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^25.1.0",
+    "jest-emotion": "^10.0.27",
     "prettier": "^1.13.7",
     "prop-types": "^15.6.2",
     "serve": "^9.1.0",
